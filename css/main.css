@@ -138,8 +138,8 @@ ul {
 .hero-section {
   position: relative;
   z-index: 10;
-  min-height: 97vh;
-  padding-bottom: 6%;
+  min-height: 88vh;
+  padding-bottom: 0%;
 }
 
 .hero-section .hero-container {
@@ -349,6 +349,10 @@ ul {
 
 .main-about .about-body .h4 {
   position: relative;
+}
+
+.proj-section {
+  padding-top: 100px;
 }
 
 .proj-container {
