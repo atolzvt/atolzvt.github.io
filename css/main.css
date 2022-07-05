@@ -138,7 +138,7 @@ ul {
 .hero-section {
   position: relative;
   z-index: 10;
-  min-height: 100vh;
+  min-height: 97vh;
   padding-bottom: 6%;
 }
 
@@ -269,6 +269,11 @@ ul {
   display: block;
   width: 20%;
   height: 6px;
+}
+
+.kahlo-body .enq {
+  margin-bottom: -1.5%;
+  padding: 0px;
 }
 
 .kahlo-body .problem-section {
@@ -655,19 +660,6 @@ nav .nav-links li a:hover {
     width: 100%;
     margin: 0 auto;
   }
-  .hero-section .hero-container {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0%;
-    min-height: 85vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 150px 10% 50px;
-  }
   .hero-section .hero-container .left-col {
     max-width: 1000px;
     -webkit-box-align: start;
@@ -706,7 +698,7 @@ nav .nav-links li a:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding: 4% 50px 4% 10%;
+    padding: 0% 50px 4% 10%;
   }
   .proj-container li .proj-wrap .proj-desc {
     width: 35%;
@@ -761,9 +753,6 @@ nav .nav-links li a:hover {
 @media only screen and (min-width: 1450px) {
   .hero-section .hero-container {
     padding: 200px 12% 50px;
-  }
-  .proj-container li .proj-wrap {
-    padding: 4% 0px 4% 12%;
   }
   .proj-container li .proj-wrap .proj-desc {
     position: -webkit-sticky;
@@ -842,10 +831,13 @@ nav .nav-links li a:hover {
   .proj-section {
     padding-right: 0%;
   }
-  .proj-section .proj-container li .proj-wrap .proj-desc {
+  .proj-section .proj-container li .proj-wrap {
+    padding: 0% 0px 4% 13%;
+  }
+  .proj-section .proj-container li .proj-desc {
     width: 30%;
   }
-  .proj-section .proj-container li .proj-wrap .proj-desc p {
+  .proj-section .proj-container li .proj-desc p {
     margin-left: 0%;
     font-weight: 400;
   }
