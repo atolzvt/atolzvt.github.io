@@ -34,12 +34,14 @@ h2 {
   font-size: 2em;
   line-height: 120%;
   color: var(--primary-color);
+  margin: 16px;
+  margin-left: 0px;
 }
 
 h3 {
   font-size: 1.4em;
   margin-bottom: 15px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -50,7 +52,7 @@ h4 {
 h5 {
   font-size: 1em;
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .active-nav {
@@ -178,9 +180,8 @@ ul {
 
 .kahlo-body {
   padding: 160px 10% 50px;
-  
     img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .proj-context {
@@ -206,6 +207,28 @@ ul {
     padding-bottom: 18px;
   }
 
+  .secc {
+    padding-bottom: 5%;
+
+    .excerpt{
+      margin: 2% 8% 0 8%;
+    padding: 2% 15% 0% 15%;
+    }
+  }
+
+  .excerpt {
+    margin: 2% 8% 0 8%;
+    padding: 2% 10% 2% 10%;
+    //color: #3598E5;
+
+    span {
+      color: #3598E5;
+    }
+  }
+
+  .key-insight {
+    padding-top:3%;
+  }
 
   .sec {
     padding-bottom: 5%;
@@ -213,8 +236,7 @@ ul {
   }
 
   .sec2 h3::after {
-    content: "";
-    color: aqua; 
+    content: ""; 
     background-color: var(--secondary-color);
     display: block;
     width: 20%;
@@ -222,8 +244,7 @@ ul {
   }
 
   .impact h3::after {
-    content: "";
-    color: aqua; 
+    content: ""; 
     background-color: var(--secondary-color);
     display: block;
     width: 20%;
@@ -231,8 +252,7 @@ ul {
   }
 
   .learnings h3::after {
-    content: "";
-    color: aqua; 
+    content: ""; 
     background-color: var(--secondary-color);
     display: block;
     width: 20%;
@@ -248,14 +268,26 @@ ul {
     padding-bottom: 20px;
   }
 
-  .perso-card {
-    display: inline-block;
+  .per-card {
+    display: block;
     margin-bottom: 18px;
+    max-width: 100%;
+  }
+
+  .skt-card {
+    display: block;
+    padding-bottom: 1em;
+
+    img {
+      padding: 6px;
+    }
   }
 
   .sec2 {
-    padding-top: 18px;
-    padding-bottom: 12px;
+    p {
+      margin: 0px;
+      padding-left: 10%;
+    }
   }
 
   .exp-map .em-card {
@@ -283,6 +315,14 @@ ul {
   h5 {
     margin-top: 20px;
     }
+  
+    
+  }
+}
+
+li {
+  p {
+    padding-bottom: 0px;
   }
 }
 
@@ -559,6 +599,8 @@ nav {
     iframe {
       height: 450px;
     }
+
+    
   }
 
   .main-about{
@@ -576,6 +618,8 @@ nav {
   .left-col {
     font-size: 1.2em;
   }
+
+  
 
 }
 
@@ -680,6 +724,11 @@ nav {
     padding-right: 10%;
   }
 
+  .problem-section {
+    padding-left: 0%;
+    padding-right: 10%;
+  }
+
   h5 {
     font-size: 1.3em;
   }
@@ -736,6 +785,18 @@ nav {
       margin-right: 2em;
     }
   }
+
+  .kahlo-body .skt-card {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items:center;
+    padding-bottom: 1em;
+
+    img {
+      padding: 6px;
+    }
+    
+  }
 }
 
 @media only screen and (min-width: 1450px) {
@@ -775,7 +836,7 @@ nav {
     }
     h1 {
       font-size: 4em;
-      padding-left: 6%;
+      padding-left: 10%;
       padding-right: 10%;
       margin-bottom: 0.5em;
     }
@@ -871,6 +932,11 @@ nav {
 
   .kahlo-body .proj-context {
     padding-right: 0px;
+
+  }
+
+  .kahlo-body .per-card {
+      display: flex;
   }
 
   .footer-section p{

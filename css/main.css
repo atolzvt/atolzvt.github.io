@@ -34,12 +34,14 @@ h2 {
   font-size: 2em;
   line-height: 120%;
   color: var(--primary-color);
+  margin: 16px;
+  margin-left: 0px;
 }
 
 h3 {
   font-size: 1.4em;
   margin-bottom: 15px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -50,7 +52,7 @@ h4 {
 h5 {
   font-size: 1em;
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .active-nav {
@@ -213,7 +215,7 @@ ul {
 }
 
 .kahlo-body img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .kahlo-body .proj-context {
@@ -239,6 +241,28 @@ ul {
   padding-bottom: 18px;
 }
 
+.kahlo-body .secc {
+  padding-bottom: 5%;
+}
+
+.kahlo-body .secc .excerpt {
+  margin: 2% 8% 0 8%;
+  padding: 2% 15% 0% 15%;
+}
+
+.kahlo-body .excerpt {
+  margin: 2% 8% 0 8%;
+  padding: 2% 10% 2% 10%;
+}
+
+.kahlo-body .excerpt span {
+  color: #3598E5;
+}
+
+.kahlo-body .key-insight {
+  padding-top: 3%;
+}
+
 .kahlo-body .sec {
   padding-bottom: 5%;
   padding-bottom: 8%;
@@ -246,7 +270,6 @@ ul {
 
 .kahlo-body .sec2 h3::after {
   content: "";
-  color: aqua;
   background-color: var(--secondary-color);
   display: block;
   width: 20%;
@@ -255,7 +278,6 @@ ul {
 
 .kahlo-body .impact h3::after {
   content: "";
-  color: aqua;
   background-color: var(--secondary-color);
   display: block;
   width: 20%;
@@ -264,7 +286,6 @@ ul {
 
 .kahlo-body .learnings h3::after {
   content: "";
-  color: aqua;
   background-color: var(--secondary-color);
   display: block;
   width: 20%;
@@ -280,14 +301,24 @@ ul {
   padding-bottom: 20px;
 }
 
-.kahlo-body .perso-card {
-  display: inline-block;
+.kahlo-body .per-card {
+  display: block;
   margin-bottom: 18px;
+  max-width: 100%;
 }
 
-.kahlo-body .sec2 {
-  padding-top: 18px;
-  padding-bottom: 12px;
+.kahlo-body .skt-card {
+  display: block;
+  padding-bottom: 1em;
+}
+
+.kahlo-body .skt-card img {
+  padding: 6px;
+}
+
+.kahlo-body .sec2 p {
+  margin: 0px;
+  padding-left: 10%;
 }
 
 .kahlo-body .exp-map .em-card {
@@ -314,6 +345,10 @@ ul {
 
 .kahlo-body .conclusion h5 {
   margin-top: 20px;
+}
+
+li p {
+  padding-bottom: 0px;
 }
 
 .main-about {
@@ -694,6 +729,10 @@ nav .nav-links li a:hover {
     padding-left: 10%;
     padding-right: 10%;
   }
+  .problem-section {
+    padding-left: 0%;
+    padding-right: 10%;
+  }
   h5 {
     font-size: 1.3em;
   }
@@ -752,6 +791,19 @@ nav .nav-links li a:hover {
     margin-top: 0.5em;
     margin-right: 2em;
   }
+  .kahlo-body .skt-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 2fr;
+        grid-template-columns: 3fr 2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1em;
+  }
+  .kahlo-body .skt-card img {
+    padding: 6px;
+  }
 }
 
 @media only screen and (min-width: 1450px) {
@@ -784,7 +836,7 @@ nav .nav-links li a:hover {
   }
   .sec h1 {
     font-size: 4em;
-    padding-left: 6%;
+    padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 0.5em;
   }
@@ -869,6 +921,11 @@ nav .nav-links li a:hover {
   }
   .kahlo-body .proj-context {
     padding-right: 0px;
+  }
+  .kahlo-body .per-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .footer-section p {
     padding: 0%;
